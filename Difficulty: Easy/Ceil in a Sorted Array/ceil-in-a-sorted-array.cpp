@@ -1,19 +1,20 @@
 class Solution {
   public:
     int findCeil(vector<int>& arr, int x) {
-        int n=arr.size();
+        int n = arr.size();
         int low=0;
         int high=n-1;
         int result=-1;
+        int mid=0;
         while(low<=high){
-           int mid=low+(high-low)/2;
-            if(arr[mid]<x){
-            low=mid+1;}
+            mid=low+(high-low)/2;
+            if(arr[mid]<x)
+            low=mid+1;
             else{
-            result=mid;
-            high=mid-1;}
+          result = mid;
+          high=mid-1;
+            }
         }
         return result;
-        
     }
 };
