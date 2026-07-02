@@ -1,14 +1,16 @@
-class Solution {
-  public:
-    void fizzBuzz(int number) {
-        if(number%3==0&&number%5==0)
-        cout<<"FizzBuzz"<<endl;
-         else if(number%3==0)
-        cout<<"Fizz"<<endl;
-        else if(number%5==0)
-        cout<<"Buzz"<<endl;
-        else{
-            cout<<number<<endl;
-        }
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    if(n%3==0 && n%5==0)
+    cout<<"FizzBuzz"<<endl;
+    else if(n%3==0)
+    cout<<"Fizz"<<endl;
+    else if(n%5==0)
+    cout<<"Buzz"<<endl;
+    else{
+        cout<<n<<endl;
     }
-};
+}
